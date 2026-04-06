@@ -24,6 +24,12 @@ with sync_playwright() as p:
         if not next_button:
             break
 
+        next_button.click()
+        page.wait_for_timeout(2000)
+
+    browser.close()
+
+
 
 # Playwright E-commerce Scraper
 # Site: webscraper.io/test-sites/e-commerce/ajax
@@ -92,8 +98,3 @@ with sync_playwright() as p:
 
 # if __name__ == "__main__":
 #     scrape_laptops()
-
-        next_button.click()
-        page.wait_for_timeout(2000)
-
-    browser.close()
