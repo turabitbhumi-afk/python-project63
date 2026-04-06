@@ -15,3 +15,9 @@ Collection of web scraping projects built with Python.
 - Scrapes: rank, title, year, rating
 - Tech: Firecrawl, regex, Python
 - Output: CSV
+
+### 1. E-commerce Playwright Scraper (test.py)
+Scrapes laptop names and prices from a JS-rendered e-commerce site.
+Handles pagination automatically.
+- Tech: Python, Playwright
+- Output: laptops.csv
